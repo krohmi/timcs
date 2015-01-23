@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Centurm Subskrypcji grupy TIM</title>
+
+<link href="css/cs.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+
+<script>
+
+$(document).ready(function() {	
+	$('a[name=modal]').click(function(e) {
+		e.preventDefault();
+		var id = $(this).attr('href');
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		$('#mask').fadeIn(1000);	
+		$('#mask').fadeTo("slow",0.8);	
+		var winH = $(window).height();
+		var winW = $(window).width();
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+		$(id).fadeIn(2000); 
+});
+	$('.window .close').click(function (e) {
+		e.preventDefault();
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});			
+	$(window).resize(function () {
+ 		var box = $('#boxes .window');
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+        var winH = $(window).height();
+        var winW = $(window).width();
+        box.css('top',  winH/2 - box.height()/2);
+        box.css('left', winW/2 - box.width()/2);
+	 
+	});
+	
+});
+
+</script>
+</head>
+
+<body>
+
+<div class="topmain">
+	<div class="logo"> <a href="/index.html"><img src="images/logotim.png" width="450" height="69" alt=""/></a> 
+    </div>
+
+	<div id="cssmenu">
+		<ul>
+	   	<li class="active has-sub"><a href="#"><span>Nasze serwisy</span></a>
+        <ul>
+		<li><a href="http://www.tim.pl/" target="_blank"><span>Sklep TIM</span></a></li>
+		<li><a href="http://szkolenia.tim.pl/index/" target="_blank"><span>Szkolenia elektryczne</span></a></li>         
+		<li><a href="http://www.timsa.pl/" target="_blank"><span>Strona korporacyjna</span></a></li>
+		<li><a href="http://www.ri.tim.pl/" target="_blank"><span>Relacje inwestorskie</span></a></li>         
+		<li><a href="http://jit.tim.pl/" target="_blank"><span>Just In TIM!e</span></a></li>
+		<li><a href="http://www.youtube.com/KanalTIMSA" target="_blank"><span>Kanał na YouTube</span></a></li>
+		</ul>
+		</li>
+		<li><a href="index.html"><span>Strona startowa</span></a></li>
+        </ul>
+	</div>
+</div>
+
+
+	<div class="cshead">
+		<div class="cshead-welcome">
+        Witamy w Centrum Subskrypcji grupy TIM
+		</div>
+		<div class="cshead-about">
+        W tym miejscu możesz zapisać się do naszych biuletynów informacyjnych i reklamowych, jak również wybierać, które informacje chcesz otrzymywać, a także wypisać się ze wszystkich naszych biuletynów.<br/>
+		</div>
+    </div>
+
+	<div class="startbuttony">    
+		<a id="zapisz" href="zapisz.html">Zapisz się do naszych biuletynów</a>    
+		<a id="edytuj" href="edytuj.html">Jesteś już zapisany?<br/>Edytuj swoje ustawienia.</a>    
+		<a id="wypisz" href="wypisz.html">Wypisz się ze wszystkich biuletynów</a>    
+	</div>
+
+
+<div class="footer">
+	<div class="footer-left">
+    (C) 2014 TIM SA | <a href="#dialog" name="modal">POLITYKA PRYWATNOŚCI</a> </div>
+  <div class="footer-arrow"> 
+    <a style="display:block; border:none;" href="http://www.tim.pl" target="_blank"><img src="images/trojkat_strzalka_timpl.png" width="100" height="50" alt=""/></a> </div>
+</div>
+
+<div id="boxes">
+<div id="dialog" class="window">
+<a href="#"class="close"/>ZAMKNIJ OKNO</a>
+<p align="center"> <strong>POLITYKA PRYWATNOŚCI</strong></p>
+<p> I. <strong>Informacje ogólne</strong></p>
+<p> 1. Użyte w niniejszej Polityce Prywatności sformułowania oznaczają: </p>
+<p> 1) Sprzedawca - TIM S.A. z siedzibą w Siechnicach przy ul. Eugeniusza   Kwiatkowskiego 24, 55-011 Siechnice, wpisana do Rejestru Przedsiębiorców   przez Sąd  Rejonowy dla Wrocławia – Fabrycznej IX Wydział Gospodarczy KRS, pod   numerem KRS 0000022407, o kapitale zakładowym w wysokości 22.199.200,00   zł w całości  wpłaconym, legitymująca się numerem identyfikacji podatkowej NIP:   897-000-96-78, REGON: 930339253. </p>
+<p> 2) Użytkownik – osoba odwiedzająca stronę <a href="http://www.tim.pl/">www.tim.pl</a>. </p>
+<p> 3) Sklep internetowy – to strona internetowa o adresie <a href="http://www.tim.pl/">www.tim.pl</a> (dalej: Sklep internetowy) prowadzona przez  Sprzedawcę, umożliwiająca zainteresowanym użytkownikom zakup towarów prezentowanych na stronie Sklepu internetowego. </p>
+<p> 2. Niniejsza Polityka prywatności Sklepu internetowego jest skierowana   do Użytkowników Sklepu internetowego i określa rodzaj, zakres, sposoby   korzystania z  danych, prawa i obowiązki Użytkownika oraz zabezpieczenie danych   osobowych. Brak akceptacji przez Użytkownika niniejszej Polityki   Prywatności jest  równoznaczny z brakiem możliwości korzystania z usług świadczonych za   pośrednictwem Sklepu internetowego. </p>
+<p> 3. Regulamin Sklepu internetowego jest dostępny pod następującym adresem <a href="http://www.tim.pl/jak-kupowac/regulamin/">www.tim.pl/jak-kupowac/regulamin/</a></p>
+<p> 4. Polityka Prywatności stanowi integralną część Regulaminu Sklepu internetowego <a href="http://www.tim.pl/">www.tim.pl</a></p>
+<p> 5. Administratorem danych osobowych Użytkowników zgodnie z ustawą z dnia <br>
+  29 sierpnia 1997 r. o ochronie danych osobowych (Dz. U. z 2002 r., Nr   101, poz. 926 ze zmianami, zwaną dalej &bdquo;Ustawa o ochronie danych   osobowych&rdquo;) jest  Sprzedawca. </p>
+<p> II. <strong>Dane osobowe</strong></p>
+<p> 1. Użytkownik może przeglądać strony Sklepu internetowego bez konieczności podawania swoich danych osobowych. </p>
+<p> 2. W przypadku, gdy Użytkownik chce założyć Konto w Sklepie internetowym   musi podać następujące dane osobowe: imię, nazwisko, w przypadku   przedsiębiorców -  dodatkowo nazwa firmy oraz nr NIP, adres zamieszkania lub w przypadku   przedsiębiorców - adres siedziby firmy, nr telefonu kontaktowego, adres   e-mail.  Użytkownik podaje swoje dane dobrowolnie, jednakże odmowa ich podania   uniemożliwia założenie Konta w Sklepie internetowym. </p>
+<p> 3. W przypadku, gdy Użytkownik po założeniu Konta chce dokonać zakupu w   Sklepie internetowym musi dodatkowo podać następujące dane osobowe:   adres dostawy  towaru w przypadku, gdy inny niż adres zamieszkania/siedziby firmy (z   wyjątkiem opcji – odbiór osobisty). Użytkownik podaje swoje dane   dobrowolnie,  jednakże odmowa ich podania uniemożliwia zawarcie umowy sprzedaży za   pośrednictwem sklepu internetowego. </p>
+<p> 4. W przypadku, gdy Użytkownik chce zapisać się na newsletter musi podać   adres poczty elektronicznej i wyrazić zgodę na przetwarzanie przez TIM   S.A. jego  danych osobowych w zakresie adresu poczty elektronicznej w celu   przesyłania na ten adres informacji handlowych w rozumieniu art. 2 pkt. 2   ustawy z dnia  18.07.2002 r. o świadczeniu usług drogą elektroniczną. Użytkownik podaje   swoje dane dobrowolnie, jednakże odmowa ich podania uniemożliwia   przesłanie  Użytkownikowi newslettera. </p>
+<p> 5. W przypadku gdy Użytkownik chce złożyć reklamację związaną z towarem   kupionym w Sklepie internetowym musi podać następujące dane osobowe:   imię,  nazwisko, w przypadku przedsiębiorców - dodatkowo nazwa firmy oraz nr   NIP, adres zamieszkania lub w przypadku przedsiębiorców - adres siedziby   firmy, nr  telefonu kontaktowego, adres e-mail. Użytkownik ma również możliwość   podać nr konta bankowego, na który zostanie dokonany zwrot w pieniędzy.   Użytkownik  podaje swoje dane dobrowolnie, jednakże odmowa ich podania uniemożliwia   złożenie reklamacji za pośrednictwem formularza na stronie Sklepu   internetowego. </p>
+<p> 6. W przypadku, gdy użytkownik chce otrzymywać w postaci drukowanej oraz   drogą telefoniczną informacje o promocjach, nowościach i przecenach   dotyczących  oferty TIM S.A. musi wyrazić zgodę na przetwarzanie przez TIM S.A. jego   danych osobowych w zakresie imię, nazwisko, w przypadku przedsiębiorców -   dodatkowo  nazwa firmy oraz nr NIP, adres zamieszkania lub w przypadku   przedsiębiorców - adres siedziby firmy, nr telefonu kontaktowego, w celu   marketingu produktów i  usług partnerów biznesowych TIM S.A. Wyrażenie zgody jest dobrowolne. </p>
+<p> III. <strong>Dane zbierane automatycznie</strong></p>
+<p> 1. Na podstawie art. 18 ust. 5 ustawy z dnia 18.07.2002 r. o świadczeniu   usług droga elektroniczną TIM S.A. z siedzibą w Siechnicach przetwarza   Państwa  dane charakteryzujące sposób korzystania przez Państwa z usługi   świadczonej drogą elektroniczną (dane eksploatacyjne): </p>
+<p> a) informacje o rozpoczęciu, zakończeniu oraz zakresie każdorazowego   korzystania z usługi świadczonej drogą elektroniczną zbierane za pomocą   programów  Google Analytics oraz Google Adwords. Google Analytics, to system   analityki internetowej dający wgląd w ruch Sklepu Internetowego   stosowany w celu  prowadzenia działań marketingowych. Google Adwords to system reklamowy <a href="http://pl.wikipedia.org/wiki/Google" title="Google">Google</a> pozwalający  na wyświetlanie <a href="http://pl.wikipedia.org/wiki/Link_sponsorowany" title="Link sponsorowany">linków sponsorowanych</a> w wynikach wyszukiwania <a href="http://pl.wikipedia.org/wiki/Wyszukiwarka_Google" title="Wyszukiwarka Google">wyszukiwarki Google</a> i na stronach współpracujących w ramach  programu <a href="http://pl.wikipedia.org/wiki/Google_AdSense" title="Google AdSense">Google AdSense</a>. </p>
+<p> b) informacje o skorzystaniu przez Państwa z usług świadczonej drogą elektroniczną. </p>
+<p> c) oznaczenia identyfikujące Państwa w systemie informatycznym TIM S.A. nadawane na podstawie danych podanych przez Państwa, </p>
+<p> d) oznaczenia identyfikujące zakończenie sieci telekomunikacyjnej lub   system teleinformatyczny, z którego Państwo korzystają łącząc się ze   stroną <a href="http://www.tim.pl/">www.tim.pl</a>, (IP, nazwa domeny, typ przeglądarki, typ systemu operacyjnego. Dane te mogą być zbierane przez  pliki cookies (&bdquo;ciasteczka&rdquo;), system Google Analytics oraz Google Adwords. </p>
+<p> 2. Pliki cookies (tzw. &bdquo;ciasteczka&rdquo;) stanowią dane informatyczne, w   szczególności pliki tekstowe, które przechowywane są w urządzeniu   końcowym Użytkownika  Sklepu internetowego i przeznaczone są do korzystania ze stron Sklepu   internetowego. Cookies zazwyczaj zawierają nazwę strony internetowej, z   której  pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny   numer. </p>
+<p> 3. Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Sklepu   internetowego pliki cookies oraz uzyskującym do nich dostęp jest TIM   S.A. z siedzibą  w Siechnicach przy ul. Eugeniusza Kwiatkowskiego 24. </p>
+<p> 4. Pliki cookies wykorzystywane są w celu: </p>
+<p> a) dostosowania zawartości stron internetowych Sklepu internetowego do   preferencji Użytkownika oraz optymalizacji korzystania ze stron   internetowych; w  szczególności pliki te pozwalają rozpoznać urządzenie Użytkownika Sklepu   internetowego i odpowiednio wyświetlić stronę internetową, dostosowaną   do jego  indywidualnych potrzeb; </p>
+<p> b) tworzenia statystyk, które pomagają zrozumieć, w jaki sposób   Użytkownicy Sklepu internetowego korzystają ze stron internetowych, co   umożliwia ulepszanie  ich struktury i zawartości; </p>
+<p> c) utrzymanie sesji Użytkownika Sklepu internetowego (po zalogowaniu),   dzięki której Użytkownik nie musi na każdej podstronie Sklepu   internetowego ponownie  wpisywać loginu i hasła; </p>
+<p> 5. W ramach Sklepu internetowego stosowane są dwa zasadnicze rodzaje plików cookies: &bdquo;sesyjne&rdquo; (<em>session cookies</em>) oraz &bdquo;stałe&rdquo; ( <em>persistent cookies</em>).   Cookies &bdquo;sesyjne&rdquo; są plikami tymczasowymi, które przechowywane są w   urządzeniu końcowym Użytkownika do czasu wylogowania,  opuszczenia strony internetowej lub wyłączenia oprogramowania   (przeglądarki internetowej). &bdquo;Stałe&rdquo; pliki cookies przechowywane są w   urządzeniu końcowym  Użytkownika przez czas określony w parametrach plików cookies lub do   czasu ich usunięcia przez Użytkownika. </p>
+<p> 6. W ramach Sklepu internetowego stosowane są następujące rodzaje plików cookies: </p>
+<p> a) &bdquo;niezbędne&rdquo; pliki cookies, umożliwiające korzystanie z usług   dostępnych w ramach Sklepu internetowego, np. uwierzytelniające pliki   cookies  wykorzystywane do usług wymagających uwierzytelniania w ramach Sklepu   internetowego; </p>
+<p> b) pliki cookies służące do zapewnienia bezpieczeństwa, np.   wykorzystywane do wykrywania nadużyć w zakresie uwierzytelniania w   ramach Sklepu internetowego; </p>
+<p> c) &bdquo;wydajnościowe&rdquo; pliki cookies, umożliwiające zbieranie informacji o   sposobie korzystania ze stron internetowych Sklepu internetowego; </p>
+<p> d) &bdquo;funkcjonalne&rdquo; pliki cookies, umożliwiające &bdquo;zapamiętanie&rdquo; wybranych   przez Użytkownika ustawień i personalizację interfejsu Użytkownika, np. w   zakresie  wybranego języka lub regionu, z którego pochodzi Użytkownik, rozmiaru   czcionki, wyglądu strony internetowej itp.; </p>
+<p> e) &bdquo;reklamowe&rdquo; pliki cookies, umożliwiające dostarczanie Użytkownikom   treści reklamowych bardziej dostosowanych do ich zainteresowań. </p>
+<p> 7. W wielu przypadkach oprogramowanie służące do przeglądania stron   internetowych (przeglądarka internetowa) domyślnie dopuszcza   przechowywanie plików  cookies w urządzeniu końcowym Użytkownika. Użytkownicy Sklepu   internetowego mogą dokonać w każdym czasie zmiany ustawień dotyczących   plików cookies.  Ustawienia te mogą zostać zmienione w szczególności w taki sposób, aby   blokować automatyczną obsługę plików cookies w ustawieniach przeglądarki  internetowej bądź informować o ich każdorazowym zamieszczeniu w   urządzeniu Użytkownika Sklepu internetowego. Szczegółowe informacje o   możliwości i  sposobach obsługi plików cookies dostępne są w ustawieniach   oprogramowania (przeglądarki internetowej). </p>
+<p> 8. TIM S.A informuje, że ograniczenia stosowania plików cookies mogą   wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych   Sklepu  internetowego. </p>
+<p> 9. Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Sklepu   internetowego i wykorzystywane mogą być również przez współpracujących z   TIM S.A.  reklamodawców oraz partnerów. </p>
+<p> 10. Więcej informacji na temat plików cookies dostępnych jest sekcji &bdquo;Pomoc&rdquo; w menu przeglądarki internetowej. </p>
+<p> IV. <strong>Wykorzystanie danych</strong></p>
+<p> 1. Sprzedawca przetwarza dane osobowe Użytkownika na podstawie art. 18   ust. 1-2 ustawy z dnia 18.07.2002 r. o świadczeniu usług drogą   elektroniczną w celu  założenia i prowadzenia Konta użytkownika w Sklepie internetowym. </p>
+<p> 2. Na podstawie art. 23 ust. 1 pkt. 1 ustawy z dnia 29.08.1997 r. o   ochronie danych osobowych, tj.: w oparciu o oddzielnie wyrażoną zgodę na   etapie  rejestracji Konta użytkownika Sklepu internetowego Sprzedawca przetwarza   dane osobowe Użytkownika w celu marketingu produktów i usług partnerów   biznesowych  TIM S.A. </p>
+<p> 3. Na podstawie art. 23 ust. 1 pkt. 1 ustawy z dnia 29.08.1997 r. o   ochronie danych osobowych, tj.: w oparciu o oddzielnie wyrażoną zgodę na   etapie  dokonywania zapisu na newsletter Sprzedawca przetwarza dane osobowe   Użytkownika w celu wysyłania na adres poczty elektronicznej informacji   handlowej, w  rozumieniu art. 2 pkt. 2 ustawy z dnia 18.07.2002 r. o świadczeniu usług   drogą elektroniczną. </p>
+<p> 4. Na podstawie art. 23 ust. 1 pkt. 3 ustawy z dnia 29.08.1997 r. o   ochronie danych osobowych Sprzedawca przetwarza dane osobowe Użytkownika   w celu  zawarcia i wykonania zawartej z Użytkownikiem umowy sprzedaży. </p>
+<p> 5. Na podstawie art. 23 ust. 1 pkt. 4 ustawy z dnia 29.08.1997 r. o   ochronie danych osobowych, Sprzedawca przetwarza dane osobowe   Użytkownika w celu  marketingu własnych produktów i usług. </p>
+<p> 6. Na podstawie art. 23 ust. 1 pkt. 1 ustawy z dnia 29.08.1997 r. o   ochronie danych osobowych, tj.: w oparciu o oddzielnie wyrażoną zgodę na   etapie  zgłaszania reklamacji na etapie wypełniania formularza reklamacyjnego na   stronie Sklepu internetowego, Sprzedawca przetwarza dane osobowe   Użytkownika w  celu rozpatrzenia reklamacji zgłoszonej przez Klienta związanej z   towarem zakupionym w Sklepie internetowym. </p>
+<p> 7. Sprzedawca wykorzystuje dane zbierane automatycznie do analizy   zachowania użytkowników na stronach Sklepu internetowego, zbierania   danych  demograficznych o użytkownikach lub do personalizacji zawartości stron   internetowych Sklepu internetowego. </p>
+<p> 8. Sprzedawca udostępnia dane Użytkownika Generalnemu Inspektorowi   Ochrony Danych Osobowych (&bdquo;GIODO&rdquo;) oraz organom ścigania i organom   wymiaru  sprawiedliwości lub innym podmiotom uprawnionym do ich otrzymania na   mocy przepisów prawa, gdy zachodzą ku temu okoliczności uzasadnione   przepisami prawa. </p>
+<p> 9. W celu wysyłania do Użytkowników, którzy wyrazili zgodę na   otrzymywanie od Sprzedawcy informacji handlowej w rozumieniu art. 2 pkt.   2 ustawy z dnia  18.07.2002 r. o świadczeniu usług drogą elektroniczną, Sprzedawca, na   zasadzie art. 31 ustawy z dnia 29.08.1997 r. o ochronie danych   osobowych, powierza  przetwarzanie danych osobowych w zakresie adresu poczty elektronicznej,   podmiotom trzecim, świadczącym na rzecz Sprzedawcy usługę mailingu. </p>
+<p> 10. Użytkownik może odwołać swoją zgodę na otrzymywanie informacji   handlowych drogą elektroniczną w każdym czasie poprzez kliknięcie na   odpowiedni link  zamieszczony w treści każdego newslettera lub poprzez kontakt z   Infolinią Sprzedawcy. </p>
+<p> V. <strong>Prawo dostępu do danych osobowych</strong></p>
+<p> 1. Użytkownikowi przysługuje prawo dostępu do swoich danych osobowych,   ich uzupełnienia, uaktualnienia, sprostowania, żądania zaniechania   przetwarzania,  usunięcia danych osobowych, jeżeli są one niekompletne, nieaktualne,   nieprawdziwe lub zostały zebrane z naruszeniem Ustawy o ochronie danych   osobowych albo  są już zbędne do realizacji celu, dla którego zostały zebrane. </p>
+<p> 2. Wszelkich zmian w zakresie swoich danych osobowych Użytkownik może   dokonywać poprzez przesłanie wiadomości za pośrednictwem poczty   elektronicznej na  adres Sprzedawcy: sklep@tim.pl lub poprzez kontakt z Infolinią   Sprzedawcy. </p>
+<p> VI. <strong>Zabezpieczenie danych osobowych</strong></p>
+<p> 1. Sprzedawca jako administrator danych osobowych stosuje środki   techniczne oraz organizacyjne niezbędne do ochrony danych wymagane   Ustawą o ochronie  danych osobowych, w szczególności zabezpieczają dane osobowe   Użytkowników przed udostępnieniem ich osobom nieupoważnionym, utratą czy   uszkodzeniem. </p>
+<p> 2. W celu zapobieżenia pozyskiwaniu i modyfikowaniu przez osoby   nieuprawnione danych osobowych przesyłanych przez Użytkownika podczas   rejestracji oraz  logowania się do konta użytkownika Sklepu, Sprzedawca zapewnia   szyfrowanie połączenia z serwerem Sprzedawcy z użyciem certyfikatu SSL. </p>
+<p> VII. <strong>Postanowienia końcowe</strong></p>
+<p> 1. Polityka Prywatności: wersja z dnia 08.05.2013 r. </p>
+<p> 2. Zasady określone w Polityce prywatności podlegają prawu polskiemu. </p>
+<p> 3. Sprzedawca powiadomi Użytkownika o każdorazowej zmianie Polityki   prywatności, w formie komunikatu przesłanego na adres poczty   elektronicznej podany  Usługodawcy przez Użytkownika na etapie rejestrowania się do Konta w   Sklepie internetowym. Użytkownik będzie związany postanowieniami nowej   Polityki  prywatności, o ile nie wypowie Polityki prywatności w terminie   czternastu (14) dni od dnia jego powiadomienia o zmianie Polityki   prywatności. </p>
+</div>
+<div id="mask"></div>
+</div>
+
+</body>
+</html>
